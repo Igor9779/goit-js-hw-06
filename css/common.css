@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+img{
+  width: 640px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
