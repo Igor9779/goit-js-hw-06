@@ -1,3 +1,7 @@
+// Створити змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізувати її значенням 0.
+// Додати слухачів кліків до кнопок, всередині яких збільшувати або зменшувати значення лічильника.
+// Оновлювати інтерфейс новим значенням змінної counterValue.
+
 const refs = {
     incrementValue: document.querySelector('[data-action="increment"]'),
     decrementValue: document.querySelector('[data-action="decrement"]'),
