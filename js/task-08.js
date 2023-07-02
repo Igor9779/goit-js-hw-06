@@ -26,6 +26,12 @@ function onHandleSubmit(event) {
     if (email.value === '' || password.value === '') {
         return alert('All fields must be filled!')
     };
-    console.log(`Login: ${email.value}, Password: ${password.value}`);
+
+    const dataUser = {
+        login: email.value,
+        password: password.value,
+    };
+
+    console.log(dataUser);
     event.currentTarget.reset();
 };

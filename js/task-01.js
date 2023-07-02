@@ -14,5 +14,6 @@ const categoryName = document.querySelectorAll('.item');
 categoryName.forEach(name => {
     const title = name.firstElementChild.textContent;
     const countItems = name.querySelectorAll('li').length;
-    console.log(`Category: ${title} Elements: ${countItems}`);
+    console.log(`Category: ${title}`);
+    console.log(`Elements: ${countItems}`);
 });

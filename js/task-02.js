@@ -17,9 +17,11 @@ const ingredients = [
 
 const listRef = document.querySelector('#ingredients');
 
-const itemsRef = ingredients.map(ingredient => {
+  const itemsRef = ingredients.map(ingredient => {
   const itemEl = document.createElement('li');
   itemEl.textContent = ingredient;
   itemEl.classList.add('item');
-  listRef.append(itemEl);
-});
+    return itemEl;
+  });
+
+  listRef.append(...itemsRef);

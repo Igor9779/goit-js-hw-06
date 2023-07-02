@@ -16,9 +16,9 @@ function createBoxes() {
   const amount = Number(inputRef.value);
   const boxes = [];
 
-  for (const item of amount) {
+  for (let i = 0; i < amount; i += 1) {
     const box = document.createElement('div');
-    const size = 30 + item * 10;
+    const size = 30 + i * 10;
     box.style.width = size + 'px';
     box.style.height = size + 'px';
     box.style.backgroundColor = getRandomHexColor();
